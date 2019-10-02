@@ -39,7 +39,7 @@ export default function App() {
 
   return (
     <>
-      <h1>GQL w/ no client lib</h1>
+      <h1>GQL no client lib</h1>
       {loading && `Loading...`}
       {error && `ERROR...`}
       {data && data.hello && `${data.hello}`}
