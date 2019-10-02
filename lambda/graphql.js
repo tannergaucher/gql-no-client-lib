@@ -5,11 +5,27 @@ const typeDefs = gql`
     id: ID!
     email: String!
   }
+
+  type Query {
+    hello: String!
+  }
+
+  type Mutation {
+    signup: User!
+  }
 `
 
 const resolvers = {
-  Query: {},
-  Mutation: {},
+  Query: {
+    hello: () => {
+      return 'Hello'
+    },
+  },
+  Mutation: {
+    signup: () => {
+      return
+    },
+  },
 }
 
 const server = new ApolloServer({
