@@ -13,7 +13,7 @@ export default function App() {
 
       try {
         const res = await fetch(
-          'http://localhost:8888/.netlify/functions/graphql',
+          process.env.REACT_APP_URL + '/.netlify/functions/graphql',
           {
             method: 'POST',
             headers: {
