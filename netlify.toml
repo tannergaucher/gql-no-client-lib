@@ -1,11 +1,11 @@
 [build]
   command = "yarn build"
   functions = "lambda"
-  publish = "public"
+  publish = "build"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  
+ 
 
