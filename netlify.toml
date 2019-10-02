@@ -1,9 +1,7 @@
-
 [build]
   command = "yarn build"
   functions = "lambda"
-  publish = "public/index.html"
-
+  publish = "public"
 
 [[redirects]]
   from = "/*"
